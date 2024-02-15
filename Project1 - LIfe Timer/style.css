@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+.background{
+    background-image: url(Images/mountain.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.container h1{
+    background-color: lightcoral;
+    border-radius: 20px;
+    padding: 15px;
+    color: black;
+    font-size: 40px;
+}
+
+.setting{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.setting .fa-cog{
+    font-size: 30px;
+    color: white;
+}
+
+.settingcont{
+    display: flex;
+    gap: 1rem;
+}
+
+.settingcont input{
+   padding: 5px;
+   border-radius: 10px;
+   border: 2px solid white;
+   font-size: 10px;
+}
+
+.settingcont button{
+   padding: 5px;
+   border-radius: 10px;
+   border: none;
+   font-size: 9px;
+   background-color: lightcoral;
+}
+
+.settingcont button:hover{
+    background-color: white;
+    scale: 1.1;
+    cursor: pointer ;
+}
+
+.timecont{
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.timecont h2{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.timecont h2 div{
+    font-size: 3rem
+}
+
+.hide{
+    display: none;
+}
