@@ -14,8 +14,8 @@ const generateProf = (profile) => {
                         <img src="${profile.avatar_url}" alt="Profile Pic"/>
                     </div>
                     <div class="self">
-                        <h1>${profile.name}</h1>
-                        <span>${profile.login}</span>
+                        <h1><span>Name : </span>${profile.name}</h1>
+                        <span>Username : ${profile.login}</span>
                     </div>
                 </div>
                 <a href="${profile.html_url}" target="_blank">
