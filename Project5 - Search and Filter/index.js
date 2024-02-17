@@ -36,12 +36,12 @@
     const renderProducts = (products) =>{
         productContEl.innerHTML = "";
         products.forEach((product) =>{
-            productContEl.innerHTML += generatedProducts(product);
+        productContEl.innerHTML += generatedProducts(product);
         });
     };
 
     const checkText = (text, searchText) =>{
-        return text .toString().toLowerCase().includes(searchText);
+        return text.toString().toLowerCase().includes(searchText);
     };
 
     const filterHandler = (event) =>{
