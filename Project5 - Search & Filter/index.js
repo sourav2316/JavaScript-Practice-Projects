@@ -11,11 +11,10 @@
         return error;
         }
     };
-
     const products = await fetchRequest();
 
     const generatedProducts = (product) => {
-        return `
+        return`
         <div class="productCard">
             <div class="imageCont">
                 <img src="${product.image}" alt="image">
@@ -52,17 +51,13 @@
             return(
                 checkText(product.description, searchText) ||
                 checkText(product.title, searchText) ||
-                checkText(product.price, searchText)
+                checkText(product.price, searchText) ||
+                checkText(product.image, searchText)
             );
           });
 
         renderProducts(filteredProducts);
     };
-
     searchEl.addEventListener("keyup", filterHandler);
-
-
-
     renderProducts(products);
-
-})(); 
+})();
