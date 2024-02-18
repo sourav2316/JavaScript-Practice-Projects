@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Poppins", sans-serif;
+}
+
+.title{
+    height: 10vh;
+    background: linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.title h1{
+    filter: drop-shadow(1px 1px 0px rgb(0, 0, 0));
+}
+
+.btn{
+    height: 20vh;
+    display: grid;
+    place-items: center;
+}
+
+         
+.btn button{
+    background-image: linear-gradient(to left, #314755 0%, #26a0da  51%, #314755  100%);
+    padding: 15px 20px;
+    text-transform: uppercase;
+    transition: 0.6s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    border: none;
+  }
+
+  .btn button:hover {
+    background-position: right center;
+    color: #fff;
+  }
+ 
+  .colorcont{
+    height: calc(80vh - 80vh);
+    display: flex;
+    justify-content:center ;
+    gap: 50px;
+  }
+
+  #color1{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.36);
+  }
+  #color2{
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.36);
+  }
+  #color3{
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.36);
+  }
+  #color4{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.36);
+  }
+
+  .colorBox p{
+    width: 80px;
+    font-size: 14px;
+    text-align: end;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: lightcyan;
+    display: none;
+    cursor: copy;
+  }
+
+  .colorBox:hover p{
+    display: inline-block;
+  }
+
+  @media (max-width: 767px) {
+    .colorcont{
+        display: grid;
+      }
+    
+  }
