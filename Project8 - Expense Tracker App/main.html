@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <section class="boxUpper">
+                <h1>Expense Tracker</h1>
+        
+                <div class="balance">
+                    <h2 id="netAmount">₹0</h2>
+                    <h3>Your Balance</h3>
+                </div>
+            </section>
+            <div class="transCont">
+                <h3>Transactions</h3>
+                    <hr>
+                <div class="transactions">
+                </div>
+            </div>
+            <section class="transForm">
+                <h3>Add Transaction</h3>
+                <form id="transactionForm">
+                   <div class="inputs">
+                    <div class="formControl">
+                        <label for="Text">Text</label>
+                        <input id="text" type="text" name="Text" placeholder="Enter Description...">
+                    </div>
+                    <div class="formControl">
+                        <label for="amount">Amount</label>
+                        <input id="number" type="number" name="amount" placeholder="Enter Amount">
+                    </div>
+                   </div>
+                    <div class="buttonsCont">
+                        <button type="submit" id="earnBtn">
+                            <p id="earning">₹0</p>
+                            <p>Earning</p>
+                        </button>
+                        <button type="submit" id="expBtn">
+                            <p id="expense">₹0</p>
+                            <p>Expense</p>
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
