@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(Images/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px #000, 0px 10px 20px #000;
+    border-radius: 20px;
+}
+
+.container h1 {
+    font-size: 120px;
+    font-weight: 700;
+}
+
+.container span {
+    position: relative;
+    top: -33px;
+    margin-left: 5px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+@media (max-width:721px) {
+    .container {
+        width: 100%;
+        max-width: 600px;
+        height: 20vh;
+    }
+
+    .container h1 {
+        font-size: 100px;
+        font-weight: 700;
+    }
+
+    .container span {
+        font-size: 25px;
+        font-weight: 700;
+    }
+}
+
+@media (max-width:626px) {
+    .container {
+        width: 100%;
+        max-width: 500px;
+        height: 20vh;
+    }
+
+    .container h1 {
+        font-size: 70px;
+        font-weight: 700;
+    }
+
+    .container span {
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+@media (max-width:527px) {
+    .container {
+        width: 100%;
+        max-width: 400px;
+        height: 10vh;
+    }
+
+    .container h1 {
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    .container span {
+        font-size: 15px;
+        font-weight: 700;
+    }
+}
+
+@media (max-width:441px) {
+    .container {
+        width: 100%;
+        max-width: 300px;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container h1 {
+        font-size: 130px;
+        font-weight: 700;
+    }
+
+    .container span {
+        font-size: 50px;
+        font-weight: 700;
+        margin-top: 10px;
+        right: 30px;
+    }
+}
