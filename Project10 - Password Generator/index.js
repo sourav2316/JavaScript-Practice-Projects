@@ -44,7 +44,7 @@ function generatePassword(){
 copyIcon.addEventListener("click", ()=>{
     if(passBox.value != "" || passBox.value.length >= 1){
         navigator.clipboard.writeText(passBox.value)
-        copyIcon.innerText = "check"
+        copyIcon.innerText = "check";
         copyIcon.title = "Password Copied"
 
         setInterval(() => {
